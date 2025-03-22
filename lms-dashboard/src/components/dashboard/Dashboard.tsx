@@ -3,6 +3,7 @@ import CourseCard from './CourseCard';
 import StudyHoursChart from './StudyHoursChart';
 import PerformanceGauge from './PerformanceGauge';
 import Calendar from './Calendar';
+import { ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 
 const courses = [
   {
@@ -144,6 +145,12 @@ const Dashboard = () => {
               ))}
             </div>
           </div>
+
+          {/* AI Chatbot Button */}
+          <button className="w-full bg-[#1C1C1C] hover:bg-[#1C1C1C]/90 text-white rounded-2xl p-4 flex items-center justify-center gap-2 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-colors duration-200">
+            <ChatBubbleLeftRightIcon className="w-5 h-5" />
+            <span className="font-medium">AI Chatbot</span>
+          </button>
         </div>
       </div>
     </div>
